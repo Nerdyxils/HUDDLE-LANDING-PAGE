@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+header {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: #c5eff7;
+    width: auto; 
+    height: 718px;
+}
+
+.container {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.logo {
+    float: left;
+}
+
+.tryBtn button {
+    float: right;
+    margin-right: -50px;
+    border-radius: 50px;
+    border: 0px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    font-family: 'Playfair Display', serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.text {
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+}
+
+.col-6 img {
+    width: 700px;
+    height: 450px;
+    padding-right: 30px;
+}
+
+.col-6 .btn {
+    background-color: #fa5997;
+    border-radius: 50px;
+    border: 1px solid #fa5997;
+    height: 45px;
+    width: 250px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 170px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sections img {
+    width: 400px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.text-sections {
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+    margin-top: 120px;
+    margin-left: 70px;
+}
+
+.special {
+    margin-left: -20px;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 9;
+    width: 600px;
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: -30%;
+    margin-left: 370px;
+    background-color: #fff;
+}
+
+.overlay h3 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.overlay .btn {
+    background-color: #fa5997;
+    border-radius: 50px;
+    border: 1px solid #fa5997;
+    height: 60px;
+    width: 300px;
+    font-weight: 700;
+    margin-left: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    height: 500px;
+    width: auto;
+    background-color: #2c3e50;
+}
+
+footer .row {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.link-adj {
+    display: flex;
+    margin-right: 200px;
+}
+
+footer .about-company {
+    display: flex;
+    text-align: left;
+}
+
+footer .about-company i {
+    margin-right: 30px;
+}
+
+footer .col {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    margin: 30px 0 0 130px;
+}
+
+footer .links {
+    margin: 90px 0 0 0px;
+}
+
+footer a, li{
+    list-style: none;
+    color: #ffffff;
+}
+
+footer .icons {
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+footer .icons i{
+    background: #2c3e50;
+    padding: 6px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+.spec {
+    display: inline-flex;
+}
+
+.copyright {
+    font-family: 'Roboto Slab', serif;
+    float: right;
+    color: #ffffff;
+    font-size: 13px;
+    margin-right: 80px;
+}
+
+
+
+@media (max-width: 712px) {
+    header {
+        background-image: url(../images/bg-hero-mobile.svg);
+        background-color: #c5eff7;
+        width: auto;
+        height: 1000px;
+    }
+
+    img {
+        height: 50px;
+        width: 110px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .tryBtn button{
+        margin-right: 50px;
+        width: 130px;
+        height: 40px;
+    }
+
+    /*Revisit*/
+    .row {
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    .text {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 80px;
+        margin-top: -130px;
+    }
+
+    .row .image img {
+        height: 300px;
+        width: 450px;
+    }
+    /*revisit-end: come back to re-design this div*/
+
+    .sections {
+        flex-direction: column;
+        width: 400px;
+        height: 700px;
+        margin-left: 50px;
+    }
+
+    .sections img {
+        order: 1;
+        width: 300px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .text-sections {
+        order: 2;
+        position: relative;
+        text-align: center;
+        margin-top: -20px;
+        margin-left: 100px;
+    }
+
+    .overlay {
+        margin-left: 15px;
+        width: 450px;
+    }
+
+    .overlay h3 {
+        font-size: 20px;
+    }
+
+    .overlay .btn {
+        width: 250px;
+        height: 50px;
+        margin-left: 100px;
+    }
+
+    footer {
+        width: auto;
+        height: 700px;
+    }
+    footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer img {
+        order: 1;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+
+    footer .about-company {
+        order: 2;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: justify;
+    }
+
+    footer .link-adj {
+        order: 3;
+        display: list-item;
+        margin-top: 220px;
+        margin-left: 10px;
+    }
+
+    footer .ad-links {
+        margin-top: 10px;
+    }
+
+    footer .icons {
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    
+
+    
+
+    
+
+    
+}
